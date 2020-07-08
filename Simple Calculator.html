@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style type="text/css">
+        div{
+            height: 300px;
+            width: 300px;
+            background: red;
+            padding-left: 3px;
+            padding-right: 1px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border: 8px solid gray;
+            border-radius: 10px;
+        }
+        #mod{
+            height: 40px;
+            width: 145px;
+        }
+        #mul{
+            height: 40px;
+            width: 145px;
+        }
+        #ac{
+            width: 45px;
+        }
+        #add{
+            width: 45px;
+        }
+        #minus{
+            width: 45px;
+        }
+        #divi{
+            width: 45px;
+        }
+        #screen{
+            width: 280px;
+            height: 80px;
+        }
+        div form input{
+            color: rgba(0,0,0,0.9);
+            background-color: white;
+            width: 80px;
+            height: 40px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="clc">
+        <form name="c">
+            <input type="text" name="screen" id="screen"><br><br>
+            <input type="button" name="9" value="9" id="nine" onclick="c.screen.value+='9'">
+            <input type="button" name="8" value="8" id="eight" onclick="c.screen.value+='8'">
+            <input type="button" name="7" value="7" id="seven" onclick="c.screen.value+='7'">
+            <input type="button" name="AC" value="AC" id="ac" onclick="c.screen.value=''"><br>
+            <input type="button" name="6" value="6" id="six" onclick="c.screen.value+='6'">
+            <input type="button" name="5" value="5" id="five" onclick="c.screen.value+='5'">
+            <input type="button" name="4" value="4" id="four" onclick="c.screen.value+='4'">
+            <input type="button" name="plus" value=" + " id="add" onclick="c.screen.value+='+'"><br>
+            <input type="button" name="3" value="3" id="three" onclick="c.screen.value+='3'">
+            <input type="button" name="2" value="2" id="two" onclick="c.screen.value+='2'">
+            <input type="button" name="1" value="1" id="one" onclick="c.screen.value+='1'" >
+            <input type="button" name="minus" value=" - " id="minus" onclick="c.screen.value+='-'"><br>
+            <input type="button" name="dot" value=" ." id="dot" onclick="c.screen.value+='.'">
+            <input type="button" name="0" value="0" id="zero" onclick="c.screen.value+='0'">
+            <input type="button" name="equal" value="=" id="equal" onclick="c.screen.value=eval(c.screen.value)">
+            <input type="button" name="div" value=" / " id="divi" onclick="c.screen.value+='/'"><br>
+            <input type="button" name="mod" value="%" id="mod" onclick="c.screen.value+='%'" >
+            <input type="button" name="mul" value="*" id="mul" onclick="c.screen.value+='*'" >
+        </form>
+    </div>
+</body>
+</html>
